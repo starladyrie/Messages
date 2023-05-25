@@ -16,3 +16,12 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+## Variáveis de Ambiente
+
+```
+CLIENT_ID
+ID do aplicativo do cliente. Trata-se de como a API irá identificar a aplicação.
+
+CLIENT_SECRET
+Conhecido e utilizado somente pelo aplicativo e pelo servidor de autorização.
+```
