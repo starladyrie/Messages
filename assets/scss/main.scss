@@ -1,0 +1,73 @@
+@import "~/assets/scss/_variables.scss";
+@import "~/assets/scss/_sidebar.scss";
+@import "~/assets/scss/_chat.scss";
+
+#main {
+  margin-left: 0;
+  padding: 2rem;
+  min-height: 100vh;
+
+  #main-content {
+    padding: 2rem;
+  }
+}
+
+#main,
+#main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  width: auto;
+  background-color: $color-fill-neutral-low-1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a:-webkit-any-link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    #chat-page {
+      margin-left: $nav-width-xs;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    #chat-page {
+      margin-left: $nav-width-sm;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    #chat-page {
+      margin-left: $nav-width-base;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}

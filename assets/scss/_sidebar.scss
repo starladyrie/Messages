@@ -1,0 +1,57 @@
+.sidebar {
+  background-color: $color-fill-neutral-low-0;
+  overflow-y: auto;
+  height: calc(100% - 120px);
+}
+
+.sidebar-text {
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.sidebar-body:hover {
+  background-color: $color-fill-primary-0;
+}
+
+.active {
+  background-color: $color-fill-primary-0;
+  color: $color-text-on-neutral-low-cta;
+}
+
+.contact-name {
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-lg;
+  padding-left: 1vw;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.contact-unread {
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-sm;
+  padding-left: 0.3vw;
+  padding-right: 0.3vw;
+  padding-top: 0.15vw;
+  padding-bottom: 0.15vw;
+  margin-left: 0.5vw;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: $color-text-on-neutral-low-cta;
+  background-color: $color-fill-primary-2;
+  display: block;
+  border-radius: 20%;
+}
+
+.contact-message {
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-base;
+  padding-left: 1vw;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: $color-text-on-neutral-low-default;
+  display: block;
+}
